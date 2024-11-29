@@ -1,11 +1,3 @@
-/* Webkit Mask for Safari and Mask for Firefox */
--webkit-mask-image: url('mask.png'); /* For Safari */
-mask-image: url('mask.png'); /* For Firefox */
-
-/* Text size adjustment for compatibility */
--webkit-text-size-adjust: 100%; /* For Webkit-based browsers */
-text-size-adjust: 100%; /* For broader compatibility */
-
 /* Global Styles */
 body {
     font-family: 'Arial', sans-serif;
@@ -123,52 +115,23 @@ input[type="text"]:hover, select:hover, button:hover {
         width: 80%;
     }
 }
-
-/* User select adjustments */
--webkit-user-select: none; /* For Safari */
-user-select: none; /* For other browsers */
-
-/* Fix content type header charset */
-meta http-equiv="Content-Type" content="text/html; charset=utf-8"
-
-/* Meta Theme Color for Firefox fallback */
-<meta name="theme-color" content="#000000"> <!-- Default color -->
-<meta name="theme-color" content="#FF0000"> <!-- For Firefox -->
-
-/* Scrollbar Styles for cross-browser compatibility */
-scrollbar-width: thin; /* Firefox */
-scrollbar-gutter: stable; /* For browsers that support it */
-
-/* Text wrapping balance compatibility for Safari */
-text-wrap: balance; /* Used for text balance in elements */
-
-/* Pointer events inside keyframes */
-@keyframes example {
-    from {
-        pointer-events: none;
-    }
-    to {
-        pointer-events: auto;
-    }
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background: #f5f5f5;
 }
-
-/* Fix to appearance issue */
-appearance: none; /* Apply to all browsers */
--moz-appearance: none; /* For Firefox */
-
-/* Ensure the correct height across browsers */
-height: -webkit-fill-available; /* For Webkit browsers */
-height: 100vh; /* For other browsers */
-
-/* Transition Compatibility */
--webkit-transition: all 0.5s ease-in-out; /* For Webkit-based browsers */
-transition: all 0.5s ease-in-out; /* For other browsers */
-
-/* Match aria-labelledby with id */
-#elementId {
-    aria-labelledby: "some-id";
+#progress-bar {
+    width: 80%;
+    margin: 20px auto;
+    height: 20px;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
 }
-
-/* Set correct height ordering */
-height: 100vh; /* Set this after -webkit-fill-available for consistency */
-max-height: 100vh; /* Similarly, use after -webkit-fill-available */
+#progress {
+    width: 0%;
+    height: 100%;
+    background: #4caf50;
+    transition: width 0.5s ease;
+}
