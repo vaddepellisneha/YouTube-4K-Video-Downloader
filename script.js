@@ -36,7 +36,7 @@ function startDownload() {
         `;
 
         // Set up EventSource for progress updates
-        const eventSource = new EventSource(`http://localhost:8000/progress/${videoId}`);
+        const eventSource = new EventSource(`https://youtubevideodownloader-lovestoblog-com.vercel.app/progress/${videoId}`);
         let startTime = Date.now(); // Track when the download started
 
         eventSource.onmessage = function(event) {
