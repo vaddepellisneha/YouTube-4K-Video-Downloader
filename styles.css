@@ -1,0 +1,137 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); /* Shadow effect for text */
+    color: #ff6347; /* Tomato color */
+    transition: color 0.3s ease;
+}
+
+h1:hover {
+    color: #ff4500; /* Darker red on hover */
+}
+
+/* Input (text field) Styling */
+input[type="text"] {
+    width: 60%;
+    max-width: 400px;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 2px solid #ff6347;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    background-color: #ffebcd; /* Light yellowish color on focus */
+    border-color: #ff4500; /* Darker red border on focus */
+}
+
+/* Select Dropdown Styling */
+select {
+    width: 250px;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 2px solid #ff6347;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+select:hover {
+    background-color: #ffebcd; /* Light yellowish color on hover */
+    border-color: #ff4500; /* Darker red border on hover */
+}
+
+select:focus {
+    background-color: #ffebcd; /* Focus effect */
+    border-color: #ff4500; /* Focus effect */
+}
+
+/* Download Button Styling */
+button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #ff6347; /* Tomato color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4500; /* Darker red */
+    transform: scale(1.1); /* Slightly enlarge the button */
+}
+
+/* Progress Bar Styling */
+#progress-bar {
+    width: 80%;
+    height: 20px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+#progress {
+    height: 100%;
+    width: 0;
+    background-color: #32cd32; /* Lime Green */
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+/* Hover Effects for Inputs and Buttons */
+input[type="text"]:hover, select:hover, button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    input[type="text"], select, button {
+        width: 80%;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background: #f5f5f5;
+}
+#progress-bar {
+    width: 80%;
+    margin: 20px auto;
+    height: 20px;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#progress {
+    width: 0%;
+    height: 100%;
+    background: #4caf50;
+    transition: width 0.5s ease;
+}
